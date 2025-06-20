@@ -1,15 +1,48 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        List<Dog> list = new ArrayList<Dog>();
+        list.add(new Dog("Scooby", 3));
+        list.add(new Dog("Bruno", 2));
+        list.add(new Dog("Oreo", 10));
+        list.add(new Dog("Darcy", 4));
+        list.add(new Dog("Tommy", 1));
+        Collections.sort(list);
+        for(Dog a: list)
+            System.out.print(a.getName() + ", ");
+        Collections.sort(list, new Dog());
+        System.out.println(" ");
+        for(Dog a: list)
+            System.out.print(a.getName() +"  : "+ a.getAge() + ", ");
+    }
+}
+
+
+class Dog implements Comparator<Dog>, Comparable<Dog>
+{
+    private String name;
+    private int age;
+    Dog() {
+    }
+    Dog(String n, int a) {
+        name = n;
+        age = a;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public int compareTo(Dog d) {
+        return (this.name).compareTo(d.name);
+    }
+    public int compare(Dog d, Dog d1) {
+        return d.age - d1.age;
     }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollectionFramework/CollectionFramework.iml" filepath="$PROJECT_DIR$/CollectionFramework/CollectionFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java8/Java8.iml" filepath="$PROJECT_DIR$/Java8/Java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Tools.SE.Java.Core.iml" filepath="$PROJECT_DIR$/.idea/Tools.SE.Java.Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java17/java17.iml" filepath="$PROJECT_DIR$/java17/java17.iml" />
+    </modules>
+  </component>
+</project>
