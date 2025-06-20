@@ -51,8 +51,6 @@ The table below tells us about the different interfaces and their work in the Co
 
 ---
 
-## 🔸 Java Collection Framework Interfaces
-
 | **SL. No.** | **Interface**        | **Extends**       | **Purpose / Description**                                                                                                            |
 | ----------- | -------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 1           | `Collection<E>`      | —                 | **Root** of the collection hierarchy. Defines basic methods like `add()`, `remove()`, `size()`, `iterator()`.                        |
